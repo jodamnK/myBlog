@@ -8,15 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class PostListItemComponent implements OnInit {
 
 
-   lastUpdate = new Promise((resolve, reject) => {
-     const date = new Date();
-     setTimeout(
-       () => {
-         resolve(date);
-      }, 2000
-     );
-   });
-
+   lastUpdate = new Date();
 
 
 @Input() title: string;
